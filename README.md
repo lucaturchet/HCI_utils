@@ -1,8 +1,8 @@
 # HCI_utils
 
-A set of python utilities to analyze and plot the results of different questionnaires
+A set of Python utilities to analyze and plot the results of different questionnaires:
 
 - SUS: system usability scale
 - NASA TLX: the NASA Task Load Index questionnaire in the raw version
-- CSI: creativty support index questionnaire
+- CSI: creativity support index questionnaire
 
