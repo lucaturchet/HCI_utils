@@ -5,4 +5,5 @@ A set of Python utilities to analyze and plot the results of different questionn
 - SUS: system usability scale
 - NASA TLX: the NASA Task Load Index questionnaire in the raw version
 - CSI: creativity support index questionnaire
+- SAM: Self-Assessment Manikin
 
