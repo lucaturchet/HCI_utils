@@ -1,0 +1,9 @@
+subject,condition,order_conditions,mental_demand,physical_demand,temporal_demand,performance,effort,frustration
+LucVig,FA,1,25,5,15,80,25,35
+LucVig,FVR,2,20,10,60,70,30,25
+MatCar,FA,1,30,70,50,60,20,45
+MatCar,FVR,2,10,45,5,80,5,55
+LucTur,FA,1,40,5,30,90,55,20
+LucTur,FVR,2,80,60,65,75,80,45
+DomSte,FVR,1,65,50,5,90,60,5
+DomSte,FA,2,70,5,60,85,20,5

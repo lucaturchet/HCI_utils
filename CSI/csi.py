@@ -1,6 +1,6 @@
 '''
 Creativity Support Index calculator
-Author: Luca Turchet
+Author: Luca Turchet @ University of Trento
 Date: 11/11/2020
 '''
 
