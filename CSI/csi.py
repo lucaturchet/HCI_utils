@@ -2,24 +2,25 @@
 Creativity Support Index calculator
 Author: Luca Turchet @ University of Trento
 Date: 11/11/2020
+
+This program computes the score of the Creativity Support Index and prints it on the console.
+It takes in input two .csv files: the file of the factors and that of the pairwise comparisons
+
+Usage: python csi.py 
+You need to amend the variables "factordata" ad "pairwisedata" to asign the path to your files
+
 '''
 
 import numpy as np
-import sys
+#import sys
 import csv
 
 
 # Load data from csv file
-#factordata = sys.argv[1]
-#pairwisedata = sys.argv[2]
-#outputdata = sys.argv[3]
-#outputfactordata = sys.argv[4]
-#outputfactordata_sorted = sys.argv[5]
-
 factordata = 'csi-input-factor-data.csv'
 pairwisedata = 'csi-input-pairwise-data.csv'
-#outputdata = 'csi-results.csv'
-#outputfactordata = 'csi-factors-results.csv'
+#factordata = sys.argv[1]
+#pairwisedata = sys.argv[2]
 
 
 CSIScore = []
@@ -108,9 +109,6 @@ with open(pairwisedata, mode='r') as csv_file:
         csi_immer_count = 0
         csi_effor_count = 0
 
-        
-
-
 
 collaboration_sub = [a*b for a,b in zip(csi_collab_sum,csi_collab_count_total)]
 enjoyment_sub = [a*b for a,b in zip(csi_enjoy_sum,csi_enjoy_count_total)]
@@ -123,8 +121,6 @@ results_worth_effort_sub = [a*b for a,b in zip(csi_effor_sum,csi_effor_count_tot
 CSI_score = [sum(x)/3.0 for x in zip(collaboration_sub, enjoyment_sub, exploration_sub, expressiveness_sub, immersion_sub, results_worth_effort_sub)]
 CSI_score_mean = np.mean(CSI_score)
 CSI_score_std = np.std(CSI_score)
-
-
 
 
 collab_mean  = np.mean(collaboration_sub)
