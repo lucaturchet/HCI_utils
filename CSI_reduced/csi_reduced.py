@@ -18,8 +18,8 @@ import csv
 
 
 # Load data from csv file
-factordata = 'csi-input-factor-data.csv'
-pairwisedata = 'csi-input-pairwise-data.csv'
+factordata = 'csi_reduced_input_factor_data.csv'
+pairwisedata = 'csi_reduced_input_pairwise_data.csv'
 #factordata = sys.argv[1]
 #pairwisedata = sys.argv[2]
 
@@ -31,7 +31,7 @@ CSIScoreByFactors = []
 # PART1
 
 with open(factordata, mode='r') as csv_file:
-    csv_reader = csv.DictReader(csv_file, delimiter = ';')
+    csv_reader = csv.DictReader(csv_file, delimiter = ',')
 
     csi_enjoy_sum = []
     csi_expl_sum = []
@@ -57,7 +57,7 @@ with open(factordata, mode='r') as csv_file:
 # PART2
 
 with open(pairwisedata, mode='r') as csv_file:
-    csv_reader = csv.DictReader(csv_file, delimiter = ';')
+    csv_reader = csv.DictReader(csv_file, delimiter = ',')
 
     csi_enjoy_count = 0
     csi_expl_count = 0
