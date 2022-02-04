@@ -120,6 +120,6 @@ ax_d.set_title("Dominance", fontsize=15, fontweight="bold")
 
 ######################
 plt.tight_layout()
-fig_all.savefig("fig_all.png", dpi=300, bbox_inches='tight')
+fig_all.savefig("fig_SAM_all.png", dpi=300, bbox_inches='tight')
 plt.show()
 
