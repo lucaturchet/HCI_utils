@@ -70,7 +70,7 @@ with open(infile, mode='r') as csv_file:
 ###########################################################################################################
 # Subplot of the three individual measures ##################################################################
 
-fig_all, (ax_v, ax_a, ax_d)= plt.subplots(1, 3, figsize=(9, 3))
+fig_all, (ax_v, ax_a, ax_d)= plt.subplots(1, 3, figsize=(11, 5))
 fig_xlabels =[condition1, condition2]
 fig_ind = np.arange(len(fig_xlabels))
 
@@ -84,6 +84,7 @@ ax_v.bar(fig_ind, fig_v_results, width=0.7, yerr=fig_v_err,  color=['#CD853F','s
 ax_v.set_xticks([0, 1]) 
 ax_v.set_xticklabels(fig_xlabels, fontsize=14)
 ax_v.set_yticks([1, 2, 3, 4, 5, 6, 7, 8, 9]) 
+ax_v.set_ylim([1, 9])
 ax_v.set_title("Valence", fontsize=15, fontweight="bold")
 #ax_v.set_ylabel("Score", fontsize=14)
 
@@ -97,6 +98,7 @@ ax_a.bar(fig_ind, fig_a_results, width=0.7, yerr=fig_a_err,  color=['#CD853F','s
 ax_a.set_xticks([0, 1]) 
 ax_a.set_xticklabels(fig_xlabels, fontsize=14)
 ax_a.set_yticks([1, 2, 3, 4, 5, 6, 7, 8, 9]) 
+ax_a.set_ylim([1, 9])
 ax_a.set_title("Arousal", fontsize=15, fontweight="bold")
 #ax_a.set_ylabel("Score", fontsize=14)
 
@@ -111,6 +113,7 @@ ax_d.bar(fig_ind, fig_d_results, width=0.7, yerr=fig_d_err,  color=['#CD853F','s
 ax_d.set_xticks([0, 1]) 
 ax_d.set_xticklabels(fig_xlabels, fontsize=14)
 ax_d.set_yticks([1, 2, 3, 4, 5, 6, 7, 8, 9]) 
+ax_d.set_ylim([1, 9])
 ax_d.set_title("Dominance", fontsize=15, fontweight="bold")
 #ax_d.set_ylabel("Score", fontsize=14)
 
