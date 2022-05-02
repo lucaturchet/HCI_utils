@@ -98,11 +98,11 @@ ax.bar(ind, results, width=0.7, yerr=err,  color=cmap.colors, ecolor='black', ca
 sus_xlabels = ['like to use system frequently', 'system unnecessarily complex', 'system easy to use', 'need technical support', 'functions well integrated', 'too much inconsistency', 'learn to use very quickly', 'inconvenient to use', 'confident using the system', 'need to learn a lot before use']
 sus_xlabels = [ '\n'.join(wrap(l, 14)) for l in sus_xlabels ]
 #sus_xlabels = [ label.replace(' ', '\n') for label in sus_xlabels]
-ax.set_xticks([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) 
+ax.set_xticks([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) 
 ax.set_xticklabels(sus_xlabels, fontsize=12, rotation=45)
 ax.set_ylim([1, 5])
 ax.set_yticks([1, 2, 3, 4, 5]) 
-sus_ylabels = ['Strongly disagree', '2', 'Neutral', '4', 'Strongly agree']
+sus_ylabels = ['Strongly disagree', '', 'Neutral', '', 'Strongly agree']
 sus_ylabels = [ '\n'.join(wrap(l, 10)) for l in sus_ylabels ]
 ax.set_yticklabels(sus_ylabels)
 #ax.set_yticklabels(['0', 'Strongly disagree', '2', 'Neutral', '4', 'Strongly agree'])
