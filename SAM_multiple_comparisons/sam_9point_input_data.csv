@@ -2,8 +2,8 @@ subject,condition,valence,arousal,dominance
 LucVig,FA,V/g,A/g,D/g
 LucTur,FA,V/e,A/b,D/h
 MatCar,FA,V/e,A/e,D/g
-LucVig,FA,V/h,A/g,D/g
-LucTur,FA,V/h,A/i,D/e
-MatCar,FA,V/i,A/i,D/e
-DomSte,FA,V/h,A/g,D/i
+LucVig,FVR,V/h,A/g,D/g
+LucTur,FVR,V/h,A/i,D/e
+MatCar,FVR,V/i,A/i,D/e
+DomSte,FVR,V/h,A/g,D/i
 DomSte,FA,V/h,A/g,D/i
